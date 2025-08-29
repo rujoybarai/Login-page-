@@ -22,6 +22,7 @@
     .navber a{
         right:-140px;
          margin-top: 25px;
+         font-size: 1rem;
     }
     .login-box{
         height: 350px;
