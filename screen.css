@@ -1,0 +1,31 @@
+@media (max-width:480px) {
+
+    header{
+        width: 100%;
+        height: 100%;
+
+    }
+    body{
+
+      object-fit: cover;
+    }
+    .logo{
+        left:10px;
+         margin-top: 15px;
+    }
+    .navber{
+        height: 100%;
+        width: 60%;
+       
+
+    }
+    .navber a{
+        right:-140px;
+         margin-top: 25px;
+    }
+    .login-box{
+        height: 350px;
+        width: 70%;
+    }
+    
+}
