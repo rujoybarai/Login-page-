@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./img/background.jpg");
+    background: blur(2px);
+    background-size: cover;
+}
+header{
+    height: 50px;
+    width: 100%;
+    background: transparent;
+   
+
+}
+.logo{
+    font-size: 2rem;
+    position: absolute;
+    left: 100px;
+    
+}
+.navber{
+    height:100%;
+    width:100%;
+    background: transparent;
+    color:aliceblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     position: relative;
+     gap: 20px;
+}
+
+.navber a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    right: -400px;
+    
+}
+
+.navber a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    border-radius: 2px;
+    background-color: aliceblue;
+    transition: all 0.5s;
+    transform: scaleX(0);
+    transform-origin: left;
+     
+    opacity: 0;
+}
+.navber a:hover::after{
+    transform: scaleX(1);
+    opacity: 1;
+   
+}
+
+.login-box{
+    height: 400px;
+    width: 400px;
+     background: radial-gradient(rgb(68, 204, 231),rgb(162, 225, 241)) ,opacity(0.7) ;
+    backdrop-filter: blur(10px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 170px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    box-shadow: 0px 10px 30px rgb(145, 146, 146);
+    border: 2px solid white;
+       display: flex;
+       flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+
+}
+.input-box{
+    height: 50px;
+    width: 80%;
+    margin-top: 10px;
+   
+   position: relative;
+       border-bottom: 2px solid black;
+   margin-left: auto;
+   margin-right: auto;
+   top: -30px;
+   margin-bottom: 10px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+     color:#162938;
+    transition: .5s;
+     pointer-events: none;
+     font-size: 1.2rem;
+     font-weight: 500;
+
+}
+
+input{
+    height: 50px;
+    width: 100%;
+  
+    border: none;
+    background:transparent;
+     padding-left: 5px;
+    
+    backdrop-filter: blur(2px);
+    outline: none;
+  
+
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+   top: -5px;
+    
+}
+
+.login-box h2{
+    font-size: 2rem;
+    position: relative;
+    top: -50px;
+    
+}
+.login-box form{
+    width: 100%;
+    padding: 10px;
+}
+
+.login-box button{
+    height: 30px;
+    width: 70px;
+   border-radius: 10px;
+background-color: rgb(151, 42, 214);
+   color: rgb(255, 255, 255);
+   font-size: 1rem;
+   font-weight: 700;
+   border: none;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.login-box button:active{
+    opacity: .5;
+}
